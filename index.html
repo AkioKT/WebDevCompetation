@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>FGR Collections</title>
+  </head>
+  <body id="body">
+    <div class="header">
+      <header class="header_1">
+        <img src="Assets" alt="Logo" class="logo"/>
+        <nav class="nav">
+          <ul class="ul" id="navigation">
+            <li>
+              <a href="">
+                <button
+                  class="flex p-2 hover:bg-blue-300 rounded"
+                  style="
+                    border: none;
+                    color: #727d73;
+                    background-color: #f0f0d7;
+                  "
+                >
+                  <svg
+                    class="icon"
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 1024 1024"
+                    height="1em"
+                    width="1em"
+                  >
+                    <path
+                      d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
+                    ></path>
+                  </svg>
+                </button>
+                Home
+              </a>
+            </li>
+            <!-- <div class="linefooter"></div> -->
+            <li>
+              <a href="">
+                <button
+                  class="flex p-2 hover:bg-blue-300 rounded"
+                  style="
+                    border: none;
+                    color: #727d73;
+                    background-color: #f0f0d7;
+                    margin-right: 1px;
+                  "
+                >
+                  <svg
+                    class="icon"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    height="1em"
+                    width="1em"
+                  >
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path
+                      d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                    ></path>
+                  </svg>
+                </button>
+                Cart</a
+              >
+            </li>
+            <!-- <div class="linefooter"></div> -->
+            <li>
+              <a href="">
+                <button
+                  class="button"
+                  style="
+                    border: none;
+                    color: #727d73;
+                    background-color: #f0f0d7;
+                  "
+                >
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    width="1rem"
+                    height="1rem"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 19.5V4.5m0 0L5.25 11.25M12 4.5l6.75 6.75"
+                    ></path>
+                  </svg>
+                </button>
+                Exchange</a
+              >
+            </li>
+            <!-- <div class="linefooter"></div> -->
+            <li>
+              <a href="" style=""
+                ><span style="margin-right: 7px">&nbsp;i</span>About Us</a
+              >
+            </li>
+            <!-- <div class="linefooter"></div> -->
+            <li class="register">
+              <button class="account" id="btnaccount" onclick="signup()">Sign Up | Log in</button>
+            </li>
+          </ul>
+          <div class="hamburger" onclick="hamburgerbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+
+      <header class="header_2">
+        <nav class="nav_2">
+          <form action="">
+            <button
+              class="flex p-2 hover:bg-blue-300 rounded"
+              style="
+                background-color: #f0f0d7;
+                margin-left: 4px;
+                padding-left: 5px;
+                border: 1.5px solid #727d73;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: none;
+                cursor: pointer;
+              "
+            >
+              <svg
+                class="icon"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 20"
+                aria-hidden="true"
+                height="1.3rem"
+                width="1.3rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </button>
+            <input type="search" placeholder=" Search for items" />
+          </form>
+          <div class="category">
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Sell Now!</a>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <!-- CONTAINER 1 -->
+    <div class="container1">
+      <img src="Assets/Atas Footer.png" alt="" />
+      <div class="invitation_sentence">
+        <h1>
+          Wear your values! Pilih pakaian yang nggak cuma keren, tapi juga
+          peduli lingkungan.
+        </h1>
+      </div>
+    </div>
+    <!-- CONTAINER 1 END -->
+
+    <!-- CONTAINER 2 -->
+    <div class="container2">
+      <div class="creator">
+        <img src="Assets/business woman.png" alt="" class="creator1">
+        <img src="Assets/bg1.png" alt="" class="creator2">
+      </div>
+      <div class="education">
+        <h1>WHAT'S</h1>
+        <h1>ECO-FASHION</h1>
+        <p>
+          Eco-fashion (or sustainable fashion) is a movement and approach to
+          designing, producing, and consuming clothing in ways that minimize
+          environmental impact and promote ethical practices. It focuses on
+          using sustainable materials, reducing waste, and ensuring fair labor
+          practices.
+        </p>
+      </div>
+    </div>
+    <!-- CONTAINER 2 END -->
+
+    <!-- CONTAINER 3 -->
+    <div class="container3">
+      <div class="container3_1">
+        <h1>Recomended for you</h1>
+        <a href="">More</a>
+      </div>
+
+      <div class="container3_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate1" name="rating1" value="">
+              <label for="loverate1" title=""></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate2" name="rating2" value="">
+              <label for="loverate2" title=""></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate3" name="rating3" value="">
+              <label for="loverate3" title=""></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate4" name="rating4" value="5">
+              <label for="loverate4" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="exchange-container">
+        <div class="exchange-content">
+            <div class="badge">New</div>
+            <h1 class="title">Exchange your item for new one</h1>
+            <a href="#" class="exchange-button">Exchange</a>
+        </div>
+        <div class="background-decoration1"></div>
+        <div class="background-decoration2"></div>
+        <div class="background-decoration3"></div>
+    </div>
+    <!-- CONTAINER 3 END -->
+
+    <!-- CONTAINER 4 -->
+    <div class="container4">
+      <div class="container4_1">
+        <h1>Newsfeed</h1>
+        <a href="">More</a>
+      </div>
+
+      <div class="container4_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate5" name="rating5" value="5">
+              <label for="loverate5" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate6" name="rating6" value="5">
+              <label for="loverate6" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate5" name="rating5" value="5">
+              <label for="loverate5" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate8" name="rating8" value="5">
+              <label for="loverate8" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="container4_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate9" name="rating9" value="5">
+              <label for="loverate9" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate10" name="rating10" value="5">
+              <label for="loverate10" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate11" name="rating11" value="5">
+              <label for="loverate11" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate12" name="rating12" value="5">
+              <label for="loverate12" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CONTAINER 4 END -->
+
+    <!-- CONTAINER 5 -->
+    <div class="container5">
+      <div class="container5_1">
+        <div class="shopprofile">
+          <img src="Assets/RachelCarson1.avif" alt="profile">
+          <div class="nameprofile">
+            <h1>Username</h1>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5" title="Sangat Baik"></label>
+              
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" title="Baik"></label>
+              
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" title="Cukup"></label>
+              
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" title="Kurang"></label>
+              
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" title="Sangat Kurang"></label>
+            </div>
+          </div>
+        </div>
+        <a href="">View</a>
+      </div>
+
+      <div class="container5_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate13" name="rating13" value="5">
+              <label for="loverate13" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate14" name="rating14" value="5">
+              <label for="loverate14" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate15" name="rating15" value="5">
+              <label for="loverate15" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate16" name="rating16" value="5">
+              <label for="loverate16" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="container5_1">
+        <div class="shopprofile">
+          <img src="Assets/RachelCarson1.avif" alt="profile">
+          <div class="nameprofile">
+            <h1>Username</h1>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5" title="Sangat Baik"></label>
+              
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" title="Baik"></label>
+              
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" title="Cukup"></label>
+              
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" title="Kurang"></label>
+              
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" title="Sangat Kurang"></label>
+            </div>
+          </div>
+        </div>
+        <a href="">View</a>
+      </div>
+
+      <div class="container5_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate13" name="rating13" value="5">
+              <label for="loverate13" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate14" name="rating14" value="5">
+              <label for="loverate14" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate15" name="rating15" value="5">
+              <label for="loverate15" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate16" name="rating16" value="5">
+              <label for="loverate16" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+     </div>
+     <!-- CONTAINER 5 END -->
+
+     <!-- CONTAINER 6 -->
+     <div class="container6">
+      <div class="container6_1">
+        <h1>Spotlight</h1>
+      </div>
+
+      <div class="container6_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate13" name="rating13" value="5">
+              <label for="loverate13" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate14" name="rating14" value="5">
+              <label for="loverate14" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate15" name="rating15" value="5">
+              <label for="loverate15" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" />
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate16" name="rating16" value="5">
+              <label for="loverate16" title="Sangat Baik"></label>
+            </div>
+          </div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+     </div>
+     <!-- CONTAINER 6 END -->
+
+      <!-- CONTAINER 7 -->
+    <div class="container7">
+      <img src="Assets/Atas Footer.png" alt="">
+      <div class="closing">
+        <h1>Eco-fashion (or sustainable fashion) is a movement and approach to designing, producing, and consuming clothing in ways that minimize environmental impact and promote ethical practices. It focuses on using sustainable materials, reducing waste, and ensuring fair labor practices.</h1>
+      </div>
+    </div>
+    <!-- CONTAINER 7 END -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer1">
+        <div class="footer1_1">
+          <h1>Discover</h1>
+          <a href="">About Eco Fashion</a>
+          <a href="">Carrier</a>
+          <a href="">Terms and Conditions</a>
+          <a href="">Privacy Policy</a>
+        </div>
+        <div class="footer1_1">
+          <h1>About Us</h1>
+          <a href="">Help</a>
+          <a href="">Refund</a>
+          <a href="">Promotion</a>
+          <a href="">Order Status</a>
+        </div>
+        <div class="footer1_1">
+          <h1>Navigation</h1>
+          <a href="">Home</a>
+          <a href="">Cart</a>
+          <a href="">Exchange</a>
+          <a href="">Sign Up |Log In</a>
+        </div>
+      </div>
+      <div class="linefooter"></div>
+      <div class="footer1_2">
+        <h1>Find Us</h1>
+        <a href=""><img src="Assets/whatsapp-white-icon.png" alt="Whatsapp"></a>
+        <a href=""><img src="Assets/insta.png" alt="Instagram"></a>
+        <a href=""><img src="Assets/x.png" alt="Twitter"></a>
+      </div>
+      <div class="copyright">
+        <p>@Copyright 2025 Chuaks.com</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- SIGN PAGE -->
+    <div class="signpage" id="idsignpage">
+      <div class="signpagelayer" id="idsignpagelayer">
+        <div class="btnclose">
+          <button onclick="closesignpage()" 
+          style="padding: 0; 
+                 width: 1rem;
+                 border: none;
+                 font-weight: 600;
+                 font-size: 20px;
+                 background-color: #f0f0d7;
+                 ">X</button>
+        </div>
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="| Username"> <br>
+        <input type="text" placeholder="| Email"> <br>
+        <input type="password" placeholder="| Password"> <br>
+        <input type="password" placeholder="| Confirm Password"> <br>
+        <button class="signup" style="border: none;">Sign Up</button>
+        <p>or</p>
+        <button><img src="Assets/google.png" alt=""><p style="padding-top: 0.1rem;">Continue With Google</p></button>
+        <button><img src="Assets/fb.png" alt=""><p style="padding-top: 0.1rem;">Continue With Facebook</p></button>
+        <button><img src="Assets/apple.png" alt="" style="width: 30px;"><p style="padding-top: 0.1rem;">Continue With Apple</p></button>
+        <p>Sudah punya akun?<a href="#idloginpage" onclick="loginoverlay()">Log in</a></p>
+      </div>
+    </div>
+    <!-- SIGN PAGE END-->
+
+    <!-- LOGIN PAGE -->
+    <div class="loginpage" id="idloginpage">
+      <div class="loginpagelayer" id="idloginpagelayer">
+        <div class="btnclose">
+          <button onclick="closeloginpage()" 
+          style="padding: 0; 
+                 width: 1rem;
+                 border: none;
+                 font-weight: 600;
+                 font-size: 20px;
+                 background-color: #f0f0d7;
+                 ">X</button>
+        </div>
+        <h1>Login Up</h1>
+        <input type="text" placeholder="| Username"> <br>
+        <input type="password" placeholder="| Password"> <br>
+        <button class="login" style="border: none;">Login In</button>
+        <p>or</p>
+        <button><img src="Assets/google.png" alt=""><p style="padding-top: 0.1rem;">Continue With Google</p></button>
+        <button><img src="Assets/fb.png" alt=""><p style="padding-top: 0.1rem;">Continue With Facebook</p></button>
+        <button><img src="Assets/apple.png" alt="" style="width: 30px;"><p style="padding-top: 0.1rem;">Continue With Apple</p></button>
+      </div>
+    </div>
+    <!-- LOGIN PAGE END -->
+  </body>
+</html>
+
+<script>
+  document.querySelector(".hamburger").addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".menu").classList.toggle("active");
+  });
+  let isMenuOpen = false;
+
+  function hamburgerbar() {
+    isMenuOpen = !isMenuOpen;
+
+    if (isMenuOpen) {
+      document
+        .getElementById("navigation")
+        .setAttribute("style", "display:block");
+    } else {
+      document
+        .getElementById("navigation")
+        .setAttribute("style", "display:none");
+    }
+  }
+
+  function signup() {
+    document.getElementById("idsignpagelayer").setAttribute("style", "display: block;");
+    document.getElementById("idsignpage").setAttribute("style", "z-index: 101;  background-color: #00000099;")
+  }
+
+  function closesignpage() {
+    document.getElementById("idsignpagelayer").setAttribute("style", "display: none");
+    document.getElementById("idsignpage").setAttribute("style", "z-index: -1;")
+  }
+
+  function loginoverlay() {
+    document.getElementById("idloginpagelayer").setAttribute("style", "display: block")
+    document.getElementById("idloginpage").setAttribute("style", "z-index: 101;")
+    document.getElementById("idsignpagelayer").setAttribute("style", "display: none")
+  }
+
+  // document.querySelector(".loginpage").addEventListener("click", function () {
+  //   this.classList.toggle("active");
+  //   document.querySelector(".menu").classList.toggle("active");
+  // });
+  
+  // let isLoginOverlay = false;
+
+  // function loginoverlay() {
+  //   isLoginOverlay = !isLoginOverlay;
+
+  //   if(isLoginOverlay) {
+  //     document.getElementById("idloginpagelayer").setAttribute("style", "display: block")
+  //     document.getElementById("idloginpage").setAttribute("style", "z-index: 101;  background-color: #00000050;")
+  //   } else {
+  //     document.getElementById("idsignpagelayer").setAttribute("style", "display: none")
+  //   }
+  // }
+
+  function closeloginpage() {
+    document.getElementById("idloginpagelayer").setAttribute("style", "display: none");
+    document.getElementById("idsignpagelayer").setAttribute("style", "display: none");
+    document.getElementById("idloginpage").setAttribute("style", "z-index: -1; background-color: transparent;")
+    document.getElementById("idsignpage").setAttribute("style", "z-index: -1; background-color: transparent;")
+  }
+
+</script>
