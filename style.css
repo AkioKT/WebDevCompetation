@@ -54,12 +54,15 @@ body {
 }
 
 .ul li {
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: var(--maincolor);
 }
 
 li a {
   text-decoration: none;
+  padding-right: 69vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: var(--fonttext);
 }
 
@@ -396,7 +399,7 @@ select {
 
 .exchange-container {
   background-color: var(--fonttext);
-  padding: 20px;
+  padding: 4rem 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -404,17 +407,20 @@ select {
 .badge {
   color: white;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
+  position: absolute;
+  top: 15%;
 }
 
 .title {
   color: white;
   font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: px;
   z-index: 2;
   position: absolute;
+  top: 30%;
 }
 
 .exchange-button {
@@ -429,6 +435,9 @@ select {
   cursor: pointer;
   text-decoration: none;
   margin-top: 2rem;
+  position: absolute;
+  z-index: 3;
+  top: 40%;
 }
 
 .background-decoration1 {
@@ -436,9 +445,9 @@ select {
   top: 0;
   right: 0;
   width: 55vw;
-  height: 160px;
+  height: 186px;
   background-color: #bebea3;
-  border-radius: 50%;
+  border-radius: 100px;
   transform: translate(30%, -10%);
   z-index: 1;
 }
@@ -447,9 +456,9 @@ select {
   top: 0;
   right: 0;
   width: 60vw;
-  height: 160px;
+  height: 184px;
   background-color: #d0d0bb;
-  border-radius: 50%;
+  border-radius: 100px;
   transform: translate(50%, -10%);
   z-index: 1;
 }
@@ -458,9 +467,9 @@ select {
   top: 0;
   right: 0;
   width: 65vw;
-  height: 160px;
+  height: 188px;
   background-color: #f0f0d7;
-  border-radius: 50%;
+  border-radius: 100px;
   transform: translate(70%, -10%);
   z-index: 1;
 }
@@ -866,6 +875,11 @@ footer {
     display: block;
     justify-content: center;
     align-items: center;
+  }
+  li a {
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
   }
   .invitation_sentence {
     padding-top: 2rem;
