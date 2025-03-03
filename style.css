@@ -166,7 +166,6 @@ form input {
   border-left: none;
   padding: 1rem;
   background-color: var(--maincolor);
-  margin-right: 5px;
 }
 
 input[type="search"]:focus {
