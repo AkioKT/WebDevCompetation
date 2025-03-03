@@ -157,7 +157,7 @@ select option {
 
 form input {
   border-left: none;
-  width: 100%;
+  width: 100vw;
   height: 4vh;
   border-radius: 5px;
   border: 1.5px solid var(--fonttext);
@@ -621,7 +621,7 @@ select {
 }
 
 .container7 img {
-  width: 100vw;
+  width: 100%;
   filter: brightness(60%);
 }
 
